@@ -10,8 +10,155 @@ html {
 
 body {
     font-size: 1.6rem;
+    min-height: 100vh;
+    background-color: #fff257;
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-h1 {
-    color: red;
+/* colors: primary #fff257
+colors: secondary #33793f */
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 48
 }
+
+/* ! START OF HEADER SECTION */
+#HeaderDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    padding-top: 1.5%;
+    background-color: #33793f;
+    color: #fff257;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+#HeaderDiv .material-symbols-outlined {
+    font-size: 36px;
+}
+
+#menu-button {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #33793f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff257;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+#menu-button  .material-symbols-outlined {
+    font-size: 24px;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+}
+
+/* ! END OF HEADER SECTION */
+
+
+/* ! START OF CARD SECTION */
+#ContainerDiv {
+    padding-left: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    min-height: 100vh;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 100px;
+}
+
+#Card {
+    background-color: #fff257;
+    border: solid 1px #33793f;
+    min-width: 300px;
+    padding: 20px 20px 60px;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+#Card h1 {
+    color: #33793f;
+    font-weight: bold;
+}
+
+.CardText {
+    color: #33793f;
+    padding-top: 2rem;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.CardPrice {
+    height: 40px;
+    padding: 0 1.5rem;
+    background-color: #33793f;
+    color: #fff257;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    position: absolute;
+    transform: translate(2.8em, -3em);
+}
+
+.CardSubscribe {
+    height: 30px;
+    width: 100%;
+    background-color: #33793f;
+    color: #fff257;
+    border: none;
+    margin-top: auto;
+    padding: 0.8em;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    transform: translate(0em, 60px);
+}
+
+.CardSubscribe:hover {
+    cursor: pointer;
+}
+
+.CardSubscribe .material-symbols-outlined {
+    font-size: 18px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* ! END OF CARD SECTION */
