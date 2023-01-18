@@ -17,9 +17,6 @@ body {
     justify-content: center;
 }
 
-/* colors: primary #fff257
-colors: secondary #33793f */
-
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -78,7 +75,7 @@ colors: secondary #33793f */
 /* ! START OF CARD SECTION */
 #ContainerDiv {
     padding-left: 100px;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
     min-height: 100vh;
     max-width: 1280px;
